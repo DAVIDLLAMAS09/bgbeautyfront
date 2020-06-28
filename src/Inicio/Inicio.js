@@ -6,7 +6,7 @@ import Acerca from '../Acerca/Acerca'
 import Academica from '../Academica/Academica'
 import Skills from '../Skills/Skills'
 import LikeThis from '../LikeThis/LikeThis'
-// import Contacto from '../Contacto/Contacto'
+import Contacto from '../Contacto/Contacto'
 import Footer from '../Footer/Footer'
 
 export class ContenedorInicio extends Component {
@@ -135,7 +135,7 @@ export class ContenedorInicio extends Component {
               {/* LikeThis */}
               <LikeThis></LikeThis>
               {/* contact */}
-              {/* <Contacto></Contacto> */}
+              <Contacto></Contacto>
               {/* footer */}
               <Footer></Footer>
            </div>
