@@ -61,7 +61,7 @@ export class Menu extends Component {
 
                         <div className="collapse navbar-collapse" id="navbarCollapse">
                             <ScrollspyNav
-                                scrollTargetIds={["home", "about", "Portfolio", "contact"]}
+                                scrollTargetIds={["home", "about", "contact"]}
                                 activeNavClass="active"
                                 scrollDuration="800"
                                 headerBackground="true"
@@ -69,7 +69,7 @@ export class Menu extends Component {
                                 <ul className="navbar-nav ml-auto navbar-center" id="mySidenav">
                                     <li className="nav-item"><a href="#home" className="nav-link">Inicio</a></li>
                                     <li className="nav-item"><a href="#about" className="nav-link">Acerca</a></li>
-                                    <li className="nav-item"><a href="#Portfolio" className="nav-link">Portafolio</a></li>
+                                    {/* <li className="nav-item"><Link to="/portfolio" className="nav-link">Portafolio</Link></li> */}
                                     <li className="nav-item"><a href="#contact" className="nav-link">Contacto</a> </li>
                                 </ul>
                             </ScrollspyNav>

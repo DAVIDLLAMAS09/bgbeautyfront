@@ -42,7 +42,8 @@ export default function (ComposedComponent) {
               this.setState({ isDisconnected: false }, () => {
                 return clearInterval(webPing)
               });
-            }).catch(() => this.setState({ isDisconnected: true }) )
+            })
+            .catch(() => this.setState({ isDisconnected: true }) )
           }, 2000);
         return;
       }

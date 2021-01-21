@@ -15,6 +15,8 @@ import mysqlLogo from '../img/mysql.png';
 import phpLogo from '../img/php.png';
 import reactLogo from '../img/react.png';
 import seoLogo from '../img/seo.jpg';
+// portfolio
+import firebaseAuth from '../img/firebaseAuth.png'
 
 
 export class Skills extends Component {
@@ -35,9 +37,8 @@ export class Skills extends Component {
               { image : reactLogo, title : "React" },
               { image : seoLogo, title : "Posicionamiento web seo" },
           ],
-          certificates : [
-            { imageUrl : 'http://landrick.react-dark.themesbrand.com/static/media/1.e2947588.jpg', title : "FUNDAMENTOS DE DISEÑO WEB", field : "certificación ofrecida por telmexHub con una duración de 35 hrs", author : "TelmexHub", date : "9 Abril, 2014" },
-            { imageUrl : 'http://landrick.react-dark.themesbrand.com/static/media/1.e2947588.jpg', title : "CSS PARA MOVILES", field : "certificación ofrecida por telmexHub con una duración de 40 hrs", author : "TelmexHub", date : "24 Noviembre, 2017" }
+          portfolio : [
+            { imageUrl : firebaseAuth, title : "Autenticacion con Firebase & React js", field : "Aplicación de autenticacion (cuenta,google,facebook) desarrollada con react js (Hooks) en el front end, firebase (auth,firestore) como backend.", author : "david llamas", date : "9 December, 2020" },
         ]
            }
        
@@ -61,19 +62,14 @@ export class Skills extends Component {
                             </div>
                         </div>
                     </div>                   
-                    <div className="row">
-                         
-                            <SkillComponent 
-                              data={this.state.keyfeatures}
-                            ></SkillComponent>
-                        
-                       
+                    <div className="row">     
+                            <SkillComponent data={this.state.keyfeatures} />
                     </div>
 
                     <div className=" mt-5 row">
                         <div className="col-lg-6">
                             <div className="section_heading mb-4">
-                                <h3 className="text-dark mb-1 font-weight-light text-uppercase"><span>Certificaciones</span></h3>
+                                <h3 className="text-dark mb-1 font-weight-light text-uppercase"><span>Portafolio</span></h3>
                                 <div className="line position-relative"></div>
                             </div>
                         </div>
@@ -81,13 +77,13 @@ export class Skills extends Component {
                     <div className="row" style={{marginTop:40}}>
                        
                             {
-                                this.state.certificates.map((work, key) =>
+                                this.state.portfolio.map((work, key) =>
                                     <div lg="6" md="6" key={key} className="mt-4 pt-2 col-md-6 col-lg-6">
                                         <div className="work-container position-relative rounded">
-                                                <img src={work.imageUrl} className="img-fluid rounded"  alt="certificates" />
+                                                <img src={work.imageUrl} className="img-fluid rounded"  alt="portfolio" />
                                                 <div className="overlay-work"></div>
                                                 <div className="content">
-                                                    <Link to="page-work-detail" className="title text-white d-block font-weight-bold">{work.title}</Link>
+                                                    <a href="https://github.com/DAVIDLLAMAS09/login-firebase" className="title text-white d-block font-weight-bold">{work.title}</a>
                                                     <small className="text-light">{work.field}</small>
                                                 </div>
                                                 <div className="client">

@@ -33,7 +33,7 @@
 
 .nav-item .nav-link {
   display: inline-block;
-  color: #212529;
+  color: #FFF;
   text-decoration: none;
 }
 
@@ -572,14 +572,14 @@
   right: 0;
   bottom: 0;
   left: 0;
-  opacity: 0;
+  opacity: 1;
   transition: all .5s ease;
   background-color: #070a5799;;
   z-index: 1;
 }
 
 .work-container .client, .work-container .content {
-  opacity: 0;
+  opacity: 1;
   transition: all .5s ease;
 }
 
@@ -801,3 +801,28 @@ a.rn-button-style--2, button.rn-button-style--2 {
     -moz-osx-font-smoothing: grayscale;
     font-family: Poppins,sans-serif;
 }
+
+.footer-link h4{
+  color: #FFF;
+  text-align: center;
+}
+
+.footer-link li{
+  list-style: none;
+}
+
+.footer-link a, .footer-link a:hover{
+  color: #FFF;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .footer-link h4{
+    color: #FFF;
+    text-align: left;
+  }
+
+  .ft-link{
+    padding-left: 0px;
+  }
+  } 

@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom';
 
 import  imgDavid from '../img/davidbg.jpg';
 
@@ -29,8 +28,8 @@ export class LikeThis extends Component {
                                             que se enumeran a continuación.
                                         </p>
                                         <div className="mt-4">
-                                            <Link to="/whatsapp" className="btn btn-primary mt-2 mr-2" style={{padding:'8px 20px'}}><i className="mdi mdi-phone"></i>Whatsapp</Link>
-                                            <Link to="/facebook" className="btn btn-outline-primary mt-2 ml-1" style={{padding:'8px 20px',color:'#fff'}}><i className="mdi mdi-book-outline"></i>Facebook</Link>
+                                            <a href="https://api.whatsapp.com/send?phone=+525611377051" className="btn btn-primary mt-2 mr-2" style={{padding:'8px 20px',background:'#41D251',border:'none'}}><i className="mdi mdi-whatsapp"></i>Whatsapp</a>
+                                            <a href="https://www.facebook.com/david.llamasortega" className="btn btn-outline-primary mt-2 ml-1" style={{padding:'8px 20px',background:'#3A5794',color:'#fff',border:'none'}}><i className="mdi mdi-book-outline"></i>Facebook</a>
                                         </div>
                                     </div>
                                 </div>

@@ -17,7 +17,7 @@ export class Contacto extends Component {
    }
 
    componentDidMount(){
-       this.getEmpleados();
+       this.getDatos();
    }
 
     handleFormSubmit=( event )=>{
@@ -26,9 +26,9 @@ export class Contacto extends Component {
     fetch('http://api.lhsunglasses.com.mx/creardatos.php',{
                 method:'POST',
                 body:JSON.stringify({
-                              'nombre': this.state.nombre,
-                               'apellido': this.state.apellido,
-                               'sueldo':this.state.sueldo
+                    'nombre': this.state.nombre,
+                    'apellido': this.state.apellido,
+                    'sueldo':this.state.sueldo
                   })
               })
               .then((response)=>{
@@ -40,7 +40,7 @@ export class Contacto extends Component {
                       apellido:'',
                       sueldo:''
                     },()=>{
-                        this.getEmpleados();
+                        this.getDatos();
                     })
                 }
               })
@@ -71,7 +71,7 @@ export class Contacto extends Component {
   }
 
 
-   getEmpleados() {
+  getDatos() {
     fetch('http://api.lhsunglasses.com.mx/obtenerdatos.php',{
                 method:'GET'
               })
@@ -107,17 +107,17 @@ export class Contacto extends Component {
                 {/* contact Start */}
                 <form action="#" >
                     <label>Nombre</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name.."
+                    <input type="text" id="fname" name="firstname" placeholder=""
                         value={this.state.nombre}
                         onChange={e => this.setState({ nombre: e.target.value })}
                     />
                     <label>Apellidos</label>
-                    <input type=" text" id="lname" name="lastname" placeholder="Your last name.."
+                    <input type=" text" id="lname" name="lastname" placeholder=""
                         value={this.state.apellido}
                         onChange={e => this.setState({ apellido: e.target.value })}
                     />
                     <label>sueldo</label>
-                    <input type=" text" id="lname" name="lastname" placeholder="Your last name.."
+                    <input type=" text" id="lname" name="lastname" placeholder=""
                         value={this.state.sueldo}
                         onChange={e => this.setState({ sueldo: e.target.value })}
                     />
