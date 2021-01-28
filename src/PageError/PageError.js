@@ -28,14 +28,14 @@ class PageError extends Component {
                                     <div lg={8} md={12} className="text-center col-md-12 col-lg-8">
                                         <img src={img404} className="img-fluid" alt="" />
                                         <div className="text-uppercase mt-4 display-3">Oh ! no</div>
-                                        <div className="text-capitalize text-dark mb-4 error-page">Page Not Found</div>
+                                        <div className="text-capitalize text-dark mb-4 error-page">Página no econtrada ó ruta privada para usuarios admin</div>
                                     </div>
                                 </div>
 
                                 <div className="row">
                                     <div md="12" className="text-center col-md-12">
-                                        <Link to="/" className="btn btn-outline-primary mt-4">Go Back</Link>
-                                        <Link to="/" className="btn btn-primary mt-4 ml-2">Go To Home</Link>
+                                        <Link to="/" className="btn btn-outline-primary mt-4">Ir atras</Link> 
+                                        
                                     </div>
                                 </div>
                             </div>

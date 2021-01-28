@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import icoPrincipal from '../img/hero-7.png'
-import David from '../img/uno.png'
+import Logo from '../img/logo.jpg'
 export class HeaderText extends Component {
    constructor(props){
        super(props);
@@ -22,13 +22,13 @@ export class HeaderText extends Component {
                         <div className="col-12 col-md-6">
                         
                             <div className="welcome_text_area">
-                                <h2 className="wow fadeInUp"  style={{visibility:'visible'}}>¡HOLA! <br></br> Soy<span> David Llamas  </span> <br></br><span> Desarrollador Web Frontend.</span></h2>
+                                <h2 className="wow fadeInUp"  style={{visibility:'visible'}}>BG Beauty <br></br>Productos 100% efectivos y amigables con el medio ambiente.</h2>
                             </div>
                         </div>
                         <div className="col-12 col-md-6">
                         
                             <div className="welcome_area_thumb text-center">
-                                <img  src={David} alt="hola" />
+                                <img  src={Logo} alt="hola" />
                             </div>
                         </div>
                     </div>

@@ -4,7 +4,7 @@
 .spinnerJS{
       /* width: 100vh; */
       height: 100vh;
-      background: #0E1E2F;
+      background: #D80265;
       position: fixed;
       left: 0;
       top: 0;
@@ -24,7 +24,7 @@
 /* navbar */
 
 .bg-unique{
-  background-color: #0E1E2F;
+  background-color: #fff;
 }
 
 .nav-icon li a {
@@ -75,6 +75,7 @@
   padding-right: 0px;
   padding-left: 0px;
   text-transform: uppercase;
+  font-weight: bold!important;
 }
 
 .navbar-custom .navbar-toggles {
@@ -171,6 +172,7 @@
 .navbar-custom.navbar-light .navbar-nav li a:hover,
 .navbar-custom.navbar-light .navbar-nav li a:active {
   color: #ffffff !important;
+  font-weight: bold;
 }
 
 .navbar-light {
@@ -234,6 +236,21 @@
 }
 
 @media (min-width: 200px) and (max-width: 768px) {
+
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    width: 100%;
+    /* height: 60%; */
+}
+
   .navbar-custom {
     margin-top: 0px;
     background-color: #000000 !important;
@@ -275,7 +292,19 @@
   .navbar-custom.navbar-light .navbar-nav li a:hover,
   .navbar-custom.navbar-light .navbar-nav li a:active {
     color: #ffffff !important;
+    font-weight: bold!important;
   }
+
+  .available {
+    top: -5px;
+    right: 13px!important;
+    background: #d70264;
+    color: #fff;
+    padding: 8px;
+    border-radius: 51px;
+
+}
+
 }
 
 @media (min-width: 992px){
@@ -340,7 +369,7 @@
 }
 
 .welcome_text_area h2 {
-  font-size:4rem;
+  font-size:2rem;
   margin-bottom: 30px;
 }
 
@@ -384,11 +413,7 @@
   background: linear-gradient(to right, #e24997, #2d2ed4);
 }
 
-.aboutContent{
-  background-image: url(./img/2a9d9016-26c8-483b-97b0-2a19226a645a.jpg);
-  height: 372px;
-    border-radius: 12px;
-}
+
 
 .imgAbout{
   top: 165%;
@@ -444,23 +469,6 @@
 }
 /* formacion academica */
 
-.aboutContentFormacion {
-  background-image: url(./img/ipnlogo.jpg);
-  height: 372px;
-  border-radius: 12px;
-  background-position-x: -142px;
-  background-size: cover;
-  background-position-y: -56px;
-}
-
-.imgAboutAcademica {
-  top: 187%;
-  right: 42px;
-  position: absolute;
-  /* width: 34%; */
-  background: #fff;
-  border-radius: 86px;
-}
 
 /* skills  */
 
@@ -516,12 +524,43 @@
 }
 
 .imagesSkills img{
-  max-width: 40px;
-  max-height: 40px;
+  max-width: 100%;
+  border-radius: 0px 0px 34px 34px;
+}
+
+.available{
+  top: -5px;
+    right: 13px;
+    background: #17b968;
+    color: #fff;
+    padding: 8px;
+    border-radius: 51px;
+}
+
+.notAvailable{
+   top: -5px;
+    right: 13px;
+    background: #d70264;
+    color: #fff;
+    padding: 8px;
+    border-radius: 51px;
+}
+
+.borrar {
+  top: -5px;
+  right: 13px!important;
+  background: #C60018;
+  color: #fff;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  
 }
 
 .skillfeature{
   text-transform: uppercase;
+  position: relative;
 }
 
 /* certificaciones */
@@ -616,7 +655,7 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #000;
+  background: #D60364;
   border-radius: 18px !important;
 }
 
@@ -624,7 +663,7 @@
 /* likethis */
 
 .bg-likeThis {
-  background-color: #1f2d3d!important;
+  background-color: #000000a1!important;
 }
 .studio-home {
   padding: 7%;
@@ -643,7 +682,8 @@
 
 .title-heading .para-desc {
   font-size: 18px;
-  color: #9bacc4!important
+  color: #FFF!important;
+  text-align: center;
 }
 
 .overlay-likethis{
@@ -690,8 +730,7 @@ input[type=submit]:hover {
   align-items: flex-end!important;
 }
 .footer-left {
-  background: -webkit-linear-gradient(305deg,#f81f01,#ee076e);
-  background: linear-gradient(145deg,#f81f01,#ee076e);
+  background: #e83e8c;
   padding: 120px;
   z-index: 2;
   margin-right: -15px;
@@ -745,7 +784,7 @@ input[type=submit]:hover {
 .footer-left .inner a.rn-button-style--2:hover {
   background: #fff;
   border-color: #fff;
-  color: #f9004d;
+  color: #e83e8c;
   text-decoration: none;
 }
 

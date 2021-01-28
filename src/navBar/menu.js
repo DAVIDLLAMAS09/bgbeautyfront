@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import $ from "jquery";
 import { Link } from 'react-router-dom';
-// import principal from '../img/zooki.png'
-import principal from '../img/davidTexto.png'
 import MenuIco from '../img/Menu.png'
 import ScrollspyNav from "react-scrollspy-nav";
 
@@ -52,7 +50,7 @@ export class Menu extends Component {
                 <nav id="main_navbar" className="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark navbar-light">
                     <div className="container">
                         <Link className="navbar-brand logo" to="/">
-                            <img src={principal} alt="" height="20" />
+                            <p style={{marginBottom:0,color:'#FFf',fontWeight:'bold',fontSize:24}}>BG BEAUTY</p>
                         </Link>
                         <div className="sss" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" >
                             <img src={MenuIco} alt="hola" style={{width:30}} />
@@ -61,16 +59,16 @@ export class Menu extends Component {
 
                         <div className="collapse navbar-collapse" id="navbarCollapse">
                             <ScrollspyNav
-                                scrollTargetIds={["home", "about", "contact"]}
+                                scrollTargetIds={["home", "productos"]}
                                 activeNavClass="active"
                                 scrollDuration="800"
                                 headerBackground="true"
                                 className="ml-auto">
                                 <ul className="navbar-nav ml-auto navbar-center" id="mySidenav">
                                     <li className="nav-item"><a href="#home" className="nav-link">Inicio</a></li>
-                                    <li className="nav-item"><a href="#about" className="nav-link">Acerca</a></li>
+                                    <li className="nav-item"><a href="#productos" className="nav-link">Productos</a></li>
                                     {/* <li className="nav-item"><Link to="/portfolio" className="nav-link">Portafolio</Link></li> */}
-                                    <li className="nav-item"><a href="#contact" className="nav-link">Contacto</a> </li>
+                                   
                                 </ul>
                             </ScrollspyNav>
                         </div>

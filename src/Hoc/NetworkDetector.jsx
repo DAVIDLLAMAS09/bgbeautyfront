@@ -55,7 +55,7 @@ export default function (ComposedComponent) {
     render() {
       return (
         <div>
-           <Loader type="BallTriangle" color="#00BFFF" height={80} width={80} className="spinnerJS" timeout={2000}/>
+           <Loader type="Circles" color="#fff" height={80} width={80} className="spinnerJS" timeout={2000}/>
           { this._triggerModalNoInternet()}
 
           <ComposedComponent {...this.props} />
